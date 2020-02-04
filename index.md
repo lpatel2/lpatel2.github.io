@@ -9,6 +9,7 @@
 
 ---
 [Baltimore City Rat Map](/projects/project2.md)
+<br><br>
 <img src="images/rats.png?raw=true"/>
 
 
