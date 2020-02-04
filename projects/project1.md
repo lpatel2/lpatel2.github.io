@@ -1,4 +1,4 @@
 # On Thin Ice: A Spherical Presentation
 <img src="/images/on_thin_ice.png?raw=true"/>
-On Thin Ice is a spherical video presentation made for Magic Planet hardware that documents the effects of climate change in the Arctic.
+On Thin Ice is a spherical video presentation that documents the effects of climate change in the Arctic. It was made for NOAA's Science on a Sphere presentation system for the purpose of being shown in museums and visitors' centers to educate the general public.
 
