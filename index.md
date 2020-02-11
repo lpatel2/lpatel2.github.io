@@ -5,11 +5,12 @@
 ### Projects 
 
 [On Thin Ice](/projects/project1.md)
+A video project on climate change for spherical media.
 <img src="/images/on_thin_ice.png?raw=true"/>
 
 ---
 [Baltimore City Rat Map](/projects/project2.md)
-<br><br>
+A hexagon tessellation map of rat reports in Baltimore.
 <img src="images/rats_cropped.png?raw=true"/>
 
 
