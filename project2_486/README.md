@@ -1,17 +1,23 @@
-# Project 2: 
+# Project 2: Pipeline Routes & Overlap with Minority Populations and Below Average Income Levels in Pennsylvania
 
-## Topic
-This project will examine if and how pipeline development in Chester County, PA affects non-white neighborhoods and municipalies disproportionately to predominantly white neighborhoods. I could expand this to multiple counties or the entire state if this scope turns out to be too small/specific however, I chose this scale because of the high Hispanic migrant population in Chester County.
+In my last project, I analyzed the pipeline routes and neighborhoods with higher minority populations in Chester County, Pennsylvania to see if there was any of an indication of a trend between pipeline routes being constructed through more predominantly non-whote neighborhoods. I did end up seeing a larger total length of pipeline running through minority neighborhoods, and wanted to see if income played a similar role by being constructed more frequently in lower income areas. I also wanted to see if the patterns, if any, also existed at the state level or if these trends were more county specific.
 
-## Data
- I found Chester County demographic data from https://chescoplanning.org/Resources/Data.cfm and pipeline data at https://chesco.maps.arcgis.com/apps/MapTools/index.html?appid=873f036ecb6d418c9cf80eaa022c48b7
+<img src="/images/chesco_income.png?raw=true"/>
 
-## Analysis
+I got the data for this map by downloading a spreadsheet of household income data from chescoplanning.org, then joined it to the Chester County shapefile to assign the values to each municipality. I calculated the median value and then selected the municipalities that had household income levels below the median levels, as shown in red above. Only about 37% of the pipeline passed through these areas, suggesting that there is not a relationship between lower income areas and where pipeline routes were constructed in the county. 
 
-<img src="/images/chesco_race.png?raw=true"/>
+I was curious to see if spatially, these areas I was analyzing overlapped at all. I decided to overlay the layers of municipalities with above average minority populations with the layer of below average income to create the map below. I was surprised to see that there was not much overlap between these two classes.
 
-For my first project, I wanted to see if there was a spatial relationship between the placement of pipeline routes and predominantly-non white municipalities, since the pipeline installation is a hot issue in my hometown and wanted to know how it was actually affecting the people who live here. The map above simply shows the non-white population as a percentage of the total population in each municipality. I got this race data from a demographics excel spreadsheet that I found on the Chester County Planning website, and joined to a shapefile of the boroughs and townships. I then performed calculations in the attribute table to add up all the minority populations and symbolize them as a percentage of the total population, to show the distribution and clustering of non-white populations on the map. I chose to add all the minority populations into one category since Chester County is predominantly white in most places and therefore some of the numbers for a single minority population were miniscule.
+<img src="/images/cc_income_race.png?raw=true"/>
 
-<img src="/images/chesco_race_pipeline.png?raw=true"/>
+I wanted to see if the entire state of Pennsylvania followed the same trends as I saw in Chester County. I gathered census data from the Pennsylvania Geospatial Data Clearinghouse and subsetted it by county, using the same method I used in my last project to highlight counties with above average minority populations. I found that only about 35% of the total pipeline length ran through these counties which make up about 42% of the total state area, so there was no correlation or trend here like that I saw in Chester County.
 
-I then downloaded a shapefile of pipeline routes through the county, also from the Chester County Planning website. For this analysis, I chose to simply calculate the average nonwhite population in Chester County as a whole, and then categorize each municipality as having a  below or above average non-white population. I calculated the total length of pipeline throughout the county, which was 307,458 meters. Then, I selected the sections of pipeline that fell within only municipalities with above average non-white populations, which turned out ot be 114, 733 meters, or 37% of the total pipeline length. However, these municipalities cover only 29% of the county total area, which means there is a higher ratio of pipeline length per unit space of municipalities with above average non-white populations versus those with below waverage populations.
+<img src="/images/PA_minority.png?raw=true"/>
+
+There did seem to be more of a trend when pipeline routes were compared to income data. In total, about 60% of the pipeline passed through these counties which also make up around 42% of Pennsylvania’s area, suggesting that there is more pipeline construction in lower-income counties.
+
+<img src="/images/PA_income.png?raw=true"/>
+
+Like Chester County, I wanted to see how these areas overlapped. Again, there was barely any overlap between the two categories. From looking at the areas highlighted on the map, it seems that the areas with higher minority populations tended to be more urban, and the areas with lower income tended to be more rural counties. This makes sense in terms of the pipeline construction because it had a much higher occurrence in the lower income counties, which because they are rural, offer more available space for pipeline construction.
+
+<img src="/images/PA_income_race.png?raw=true"/>
